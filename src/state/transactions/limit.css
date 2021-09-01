@@ -1,0 +1,6 @@
+span[innerHTML="Frontrun Protection"] {
+    color: #FFF !important
+}
+[href="https://www.gelato.network"] > *{
+    height :0px !important
+}

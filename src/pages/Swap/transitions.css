@@ -1,0 +1,39 @@
+.alert-enter {
+  opacity: 0;
+  transform:translateX(-100%);
+  transition: 500ms all ease-in;
+  filter: hue-rotate(45deg);
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.alert-enter-active {
+  opacity: 0.85;
+  transform:translateX(0%);
+  transition:  opacity 500ms  ease-in, 
+               transform 250ms ease-in;
+}
+
+.alert-enter-done {
+  opacity: 1;
+  transition: 500ms all ease-in  ;
+  filter:blur(0px);
+  animation: fadeInAnimation 1s linear;
+}
+.alert-exit {
+  opacity: 1;
+  transform:translateX(0);
+  transition: 500ms all ease-out;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform:translateX(-100%);
+  transition: opacity 300ms, transform 300ms;
+}
